@@ -23,10 +23,10 @@ jobs:
     - name: Build databaze
       run: cmake --build ${{github.workspace}}/build --config Release
 
-   - name: Build package
+    - name: Build package  # Отступ - 4 пробела
       run: cmake --build ${{github.workspace}}/build --target package
 
-    - name: Build source package
+    - name: Build source package  # Отступ - 4 пробела
       run: cmake --build ${{github.workspace}}/build --target package_source
 
     - name: Make a release
@@ -34,3 +34,4 @@ jobs:
       with:
         artifacts: "build/*.msi,build/*.exe,build/*.nupkg" 
         token: ${{ secrets.GITHUB_TOKEN }}
+
