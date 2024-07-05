@@ -1,0 +1,3 @@
+/home/misha/dev/databaze_functions/code/build/CMakeFiles/databazefunc.dir
+/home/misha/dev/databaze_functions/code/build/CMakeFiles/edit_cache.dir
+/home/misha/dev/databaze_functions/code/build/CMakeFiles/rebuild_cache.dir
