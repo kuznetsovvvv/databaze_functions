@@ -1,4 +1,4 @@
-name: CMake and Release Win
+name: CMake and Release
 
 on:
  push:
@@ -24,14 +24,13 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config Release
 
     - name: Build package
-      # Здесь нужно добавить команды сборки пакета для Windows 
-      # (например, для NSIS, Inno Setup или других инструментов)
+      run:
 
     - name: Build source package
-      # Аналогично, нужно добавить команды для создания исходного пакета
+      run: 
 
     - name: Make a release
       uses: ncipollo/release-action@v1.14.0
       with:
-        artifacts: "build/*.msi,build/*.exe,build/*.nupkg" # Измените расширения файлов
+        artifacts: "build/*.msi,build/*.exe,build/*.nupkg" 
         token: ${{ secrets.GITHUB_TOKEN }}
