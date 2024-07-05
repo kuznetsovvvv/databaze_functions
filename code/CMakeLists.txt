@@ -15,4 +15,4 @@ target_include_directories(databazefunc PRIVATE
    code 
 )
 
-include(CPack.cmake)
+
