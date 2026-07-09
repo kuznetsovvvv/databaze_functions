@@ -1,6 +1,6 @@
 include(InstallRequiredSystemLibraries)
 
-set(CPACK_PACKAGE_CONTACT mihaiieiril_160505@@mail.ru)
+set(CPACK_PACKAGE_CONTACT )
 set(CPACK_PACKAGE_VERSION ${PRINT_VERSION})
 set(CPACK_PACKAGE_NAME "databaze")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "static C++ library for databaze")
